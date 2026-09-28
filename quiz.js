@@ -549,6 +549,3 @@ function restartQuiz() {
 // ================= START =================
 
 loadQuestion();
-function startQuiz() {
-    window.location.href = "quiz.html";
-}
