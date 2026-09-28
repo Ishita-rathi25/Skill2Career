@@ -1,188 +1,134 @@
-// ================= CAREER DATA =================
+// ================= COURSE DATA =================
 
-const careers = {
+const courses = {
 
-    "Software Developer": {
-
-        icon: "💻",
-
-        category: "Technology & IT",
-
+    "BCA": {
+        title: "BCA",
+        fullName: "Bachelor of Computer Applications",
+        category: "Technology",
+        duration: "3 Years",
+        level: "Undergraduate",
+        mode: "Full Time",
         description:
-            "Build websites, applications and software using programming languages.",
-
-        overview:
-            "Software developers design, develop, test and maintain software applications. They use programming languages, development tools and problem-solving skills to create solutions for users and organizations.",
-
-        education:
-            "BCA / B.Tech",
-
-        duration:
-            "3–4 Years",
-
-        workType:
-            "IT / Software",
-
-        demand:
-            "High",
-
-        eligibility: [
-            "12th pass from a recognized board.",
-            "Computer and mathematics-related subjects can be useful.",
-            "BCA, B.Tech or another relevant qualification can be useful for many roles."
-        ],
-
-        skills: [
-            "Programming",
-            "Problem Solving",
-            "HTML & CSS",
-            "JavaScript",
-            "Database",
-            "Logical Thinking"
-        ],
-
+            "BCA is an undergraduate course for students interested in computer applications, programming and software development.",
+        eligibility:
+            "10+2 or equivalent from a recognized board. Eligibility requirements may vary by institution.",
         subjects: [
             "Programming",
             "Data Structures",
             "Database Management",
-            "Operating Systems",
             "Computer Networks",
-            "Web Development"
+            "Web Development",
+            "Operating Systems"
         ],
-
-        exams: [
-            [
-                "University Entrance Exams",
-                "For admission to certain courses."
-            ],
-            [
-                "Skill Certifications",
-                "Programming and technology certifications can help demonstrate skills."
-            ]
-        ],
-
-        jobs: [
+        careers: [
             "Software Developer",
             "Web Developer",
-            "Frontend Developer",
-            "Backend Developer",
-            "Full Stack Developer",
-            "Application Developer"
+            "Database Administrator",
+            "Software Tester",
+            "System Administrator"
         ]
-
     },
 
 
-    "Data Scientist": {
-
-        icon: "📊",
-
-        category: "Technology & IT",
-
+    "B.Tech": {
+        title: "B.Tech",
+        fullName: "Bachelor of Technology",
+        category: "Engineering",
+        duration: "4 Years",
+        level: "Undergraduate",
+        mode: "Full Time",
         description:
-            "Analyze data and use statistics and machine learning to solve problems.",
-
-        overview:
-            "Data scientists work with data to identify patterns, create models and generate useful insights for organizations.",
-
-        education:
-            "BCA / B.Tech / B.Sc",
-
-        duration:
-            "3–4 Years",
-
-        workType:
-            "Data / Technology",
-
-        demand:
-            "High",
-
-        eligibility: [
-            "12th pass from a recognized board.",
-            "Mathematics and statistics can be useful.",
-            "Relevant graduation and technical skills are useful."
-        ],
-
-        skills: [
-            "Python",
-            "Statistics",
-            "Machine Learning",
-            "Data Analysis",
-            "SQL",
-            "Problem Solving"
-        ],
-
+            "B.Tech is an engineering degree that provides technical knowledge and practical skills in various engineering fields.",
+        eligibility:
+            "10+2 with the required subjects and entrance requirements as applicable.",
         subjects: [
-            "Statistics",
-            "Python",
-            "Machine Learning",
+            "Engineering Mathematics",
+            "Programming",
             "Data Structures",
-            "Database",
-            "Mathematics"
+            "Computer Networks",
+            "Engineering Physics",
+            "Engineering Mathematics"
         ],
-
-        exams: [
-            [
-                "University Entrance Exams",
-                "Requirements depend on the selected course and institution."
-            ],
-            [
-                "Professional Certifications",
-                "Data and cloud certifications can help demonstrate technical skills."
-            ]
-        ],
-
-        jobs: [
-            "Data Scientist",
-            "Data Analyst",
-            "ML Engineer",
-            "Business Analyst",
+        careers: [
+            "Software Engineer",
+            "System Engineer",
             "Data Engineer",
-            "AI Specialist"
+            "Network Engineer",
+            "Technical Consultant"
         ]
-
     },
 
 
-    "Doctor": {
-
-        icon: "🩺",
-
-        category: "Medical & Healthcare",
-
+    "BBA": {
+        title: "BBA",
+        fullName: "Bachelor of Business Administration",
+        category: "Business",
+        duration: "3 Years",
+        level: "Undergraduate",
+        mode: "Full Time",
         description:
-            "Diagnose diseases and provide medical treatment to patients.",
-
-        overview:
-            "Doctors examine patients, diagnose medical conditions and provide treatment. Medical education and professional registration requirements depend on the country and applicable regulations.",
-
-        education:
-            "MBBS",
-
-        duration:
-            "Typically 5+ Years",
-
-        workType:
-            "Healthcare",
-
-        demand:
-            "Healthcare",
-
-        eligibility: [
-            "Eligibility depends on the medical course and applicable admission rules.",
-            "Science subjects are generally required for medical undergraduate programs.",
-            "Admission requirements should be checked with the relevant authority or institution."
+            "BBA focuses on business management, marketing, finance, entrepreneurship and leadership.",
+        eligibility:
+            "10+2 or equivalent from a recognized board.",
+        subjects: [
+            "Business Management",
+            "Marketing",
+            "Finance",
+            "Human Resource Management",
+            "Business Economics",
+            "Entrepreneurship"
         ],
+        careers: [
+            "Business Manager",
+            "Marketing Executive",
+            "HR Executive",
+            "Business Analyst",
+            "Entrepreneur"
+        ]
+    },
 
-        skills: [
-            "Communication",
-            "Clinical Knowledge",
-            "Decision Making",
-            "Empathy",
-            "Observation",
-            "Teamwork"
+
+    "MBA": {
+        title: "MBA",
+        fullName: "Master of Business Administration",
+        category: "Management",
+        duration: "2 Years",
+        level: "Postgraduate",
+        mode: "Full Time",
+        description:
+            "MBA is a postgraduate management course designed to develop business, leadership and management skills.",
+        eligibility:
+            "Graduation from a recognized university. Admission requirements vary by institution.",
+        subjects: [
+            "Marketing Management",
+            "Financial Management",
+            "Human Resource Management",
+            "Business Strategy",
+            "Operations Management",
+            "Business Analytics"
         ],
+        careers: [
+            "Business Manager",
+            "Marketing Manager",
+            "HR Manager",
+            "Financial Analyst",
+            "Management Consultant"
+        ]
+    },
 
+
+    "MBBS": {
+        title: "MBBS",
+        fullName: "Bachelor of Medicine and Bachelor of Surgery",
+        category: "Medical",
+        duration: "5.5 Years",
+        level: "Undergraduate",
+        mode: "Full Time",
+        description:
+            "MBBS is a medical degree that prepares students for a career in medicine and healthcare.",
+        eligibility:
+            "10+2 with the required science subjects and applicable medical admission requirements.",
         subjects: [
             "Anatomy",
             "Physiology",
@@ -191,291 +137,107 @@ const careers = {
             "Pharmacology",
             "Medicine"
         ],
-
-        exams: [
-            [
-                "Medical Entrance Examination",
-                "Admission requirements depend on the applicable rules."
-            ],
-            [
-                "Professional Registration",
-                "Medical practice is subject to applicable professional regulations."
-            ]
-        ],
-
-        jobs: [
-            "General Physician",
+        careers: [
+            "Doctor",
             "Medical Officer",
-            "Resident Doctor",
-            "Medical Researcher",
-            "Specialist Doctor",
-            "Hospital Doctor"
+            "Clinical Researcher",
+            "Healthcare Professional",
+            "Medical Consultant"
         ]
-
-    }
-
-};
-
-
-// ================= GET CAREER =================
-
-const params =
-    new URLSearchParams(window.location.search);
-
-const selectedCareer =
-    params.get("career") || "Software Developer";
-
-
-// ================= LOAD CAREER =================
-
-function loadCareer(careerName) {
-
-    const career =
-        careers[careerName] || careers["Software Developer"];
-
-
-    // Hero
-
-    document.getElementById("careerIcon")
-        .innerText = career.icon;
-
-    document.getElementById("careerCategory")
-        .innerText = career.category;
-
-    document.getElementById("careerTitle")
-        .innerText = careerName;
-
-    document.getElementById("careerShortDescription")
-        .innerText = career.description;
-
-
-    // Overview
-
-    document.getElementById("careerOverview")
-        .innerText = career.overview;
-
-
-    // Quick information
-
-    document.getElementById("education")
-        .innerText = career.education;
-
-    document.getElementById("duration")
-        .innerText = career.duration;
-
-    document.getElementById("workType")
-        .innerText = career.workType;
-
-    document.getElementById("demand")
-        .innerText = career.demand;
-
-
-    // Eligibility
-
-    const eligibility =
-        document.getElementById("eligibilityList");
-
-    eligibility.innerHTML = "";
-
-    career.eligibility.forEach(function(item) {
-
-        const li =
-            document.createElement("li");
-
-        li.innerText = item;
-
-        eligibility.appendChild(li);
-
-    });
-
-
-    // Skills
-
-    const skills =
-        document.getElementById("skillsContainer");
-
-    skills.innerHTML = "";
-
-    career.skills.forEach(function(skill) {
-
-        const span =
-            document.createElement("span");
-
-        span.innerText = skill;
-
-        skills.appendChild(span);
-
-    });
-
-
-    // Subjects
-
-    const subjects =
-        document.getElementById("subjectGrid");
-
-    subjects.innerHTML = "";
-
-    career.subjects.forEach(function(subject) {
-
-        const div =
-            document.createElement("div");
-
-        div.innerText = subject;
-
-        subjects.appendChild(div);
-
-    });
-
-
-    // Exams
-
-    const exams =
-        document.getElementById("examList");
-
-    exams.innerHTML = "";
-
-    career.exams.forEach(function(exam) {
-
-        const div =
-            document.createElement("div");
-
-        div.innerHTML = `
-            <strong>${exam[0]}</strong>
-            <span>${exam[1]}</span>
-        `;
-
-        exams.appendChild(div);
-
-    });
-
-
-    // Jobs
-
-    const jobs =
-        document.getElementById("jobGrid");
-
-    jobs.innerHTML = "";
-
-    career.jobs.forEach(function(job) {
-
-        const div =
-            document.createElement("div");
-
-        div.innerText = job;
-
-        jobs.appendChild(div);
-
-    });
-
-
-    // Page title
-
-    document.title =
-        careerName + " - Skill2Career";
-
-
-    // Check saved career
-
-    checkSavedCareer(careerName);
-}
-
-
-// ================= SAVE CAREER =================
-
-function saveCareer() {
-
-    let savedCareers =
-        JSON.parse(
-            localStorage.getItem("savedCareers")
-        ) || [];
-
-
-    if (!savedCareers.includes(selectedCareer)) {
-
-        savedCareers.push(selectedCareer);
-
-        localStorage.setItem(
-            "savedCareers",
-            JSON.stringify(savedCareers)
-        );
-
-    }
-
-
-    updateSaveButton();
-
-}
-
-
-// ================= UPDATE SAVE BUTTON =================
-
-function updateSaveButton() {
-
-    const button =
-        document.getElementById("saveButton");
-
-    let savedCareers =
-        JSON.parse(
-            localStorage.getItem("savedCareers")
-        ) || [];
-
-
-    if (savedCareers.includes(selectedCareer)) {
-
-        button.innerText =
-            "♥ Saved Career";
-
-        button.classList.add("saved");
-
-    } else {
-
-        button.innerText =
-            "♡ Save Career";
-
-        button.classList.remove("saved");
-
-    }
-
-}
-
-
-// ================= CHECK SAVED =================
-
-function checkSavedCareer(careerName) {
-
-    let savedCareers =
-        JSON.parse(
-            localStorage.getItem("savedCareers")
-        ) || [];
-
-
-    const button =
-        document.getElementById("saveButton");
-
-
-    if (savedCareers.includes(careerName)) {
-
-        button.innerText =
-            "♥ Saved Career";
-
-        button.classList.add("saved");
-
-    }
-
-}
-
-
-// ================= RELATED CAREER =================
-
-function openCareer(careerName) {
-
-    window.location.href =
-        "career-details.html?career=" +
-        encodeURIComponent(careerName);
-
-}
-
-
-// ================= START =================
-
-loadCareer(selectedCareer);
+    },
+
+
+    "LLB": {
+        title: "LLB",
+        fullName: "Bachelor of Laws",
+        category: "Law",
+        duration: "3 Years",
+        level: "Undergraduate",
+        mode: "Full Time",
+        description:
+            "LLB provides knowledge of legal systems, laws, constitution and legal procedures.",
+        eligibility:
+            "Graduation from a recognized university for the 3-year LLB route.",
+        subjects: [
+            "Constitutional Law",
+            "Criminal Law",
+            "Contract Law",
+            "Family Law",
+            "Property Law",
+            "Legal Writing"
+        ],
+        careers: [
+            "Advocate",
+            "Legal Advisor",
+            "Legal Consultant",
+            "Corporate Lawyer",
+            "Legal Researcher"
+        ]
+    },
+
+
+    "B.Com": {
+        title: "B.Com",
+        fullName: "Bachelor of Commerce",
+        category: "Commerce",
+        duration: "3 Years",
+        level: "Undergraduate",
+        mode: "Full Time",
+        description:
+            "B.Com focuses on accounting, finance, economics, taxation and business studies.",
+        eligibility:
+            "10+2 or equivalent from a recognized board.",
+        subjects: [
+            "Financial Accounting",
+            "Business Economics",
+            "Business Law",
+            "Taxation",
+            "Cost Accounting",
+            "Business Management"
+        ],
+        careers: [
+            "Accountant",
+            "Financial Analyst",
+            "Tax Consultant",
+            "Banking Professional",
+            "Business Executive"
+        ]
+    },
+
+
+    "B.Des": {
+        title: "B.Des",
+        fullName: "Bachelor of Design",
+        category: "Design",
+        duration: "4 Years",
+        level: "Undergraduate",
+        mode: "Full Time",
+        description:
+            "B.Des develops creative, visual and design skills for careers in different design fields.",
+        eligibility:
+            "10+2 or equivalent. Admission requirements vary by institution.",
+        subjects: [
+            "Design Fundamentals",
+            "Visual Communication",
+            "Graphic Design",
+            "Typography",
+            "User Experience Design",
+            "Design Thinking"
+        ],
+        careers: [
+            "UI/UX Designer",
+            "Graphic Designer",
+            "Product Designer",
+            "Visual Designer",
+            "Creative Designer"
+        ]
+    },
+
+
+    "B.Sc": {
+        title: "B.Sc",
+        fullName: "Bachelor of Science",
+        category: "Science",
+        duration: "3 Years",
+        level: "Undergraduate",
+        mode: "Full
