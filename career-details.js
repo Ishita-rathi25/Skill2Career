@@ -6,14 +6,12 @@ const careers = {
         category: "Technology",
         icon: "💻",
         title: "Software Developer",
-        shortDescription:
-            "Design, develop and maintain software applications and systems.",
+        shortDescription: "Design, develop and maintain software applications and systems.",
         education: "BCA / B.Tech / B.Sc Computer Science",
         duration: "3–4 Years",
         workType: "IT / Software",
         demand: "High",
-        eligibility:
-            "A relevant graduation degree or equivalent technical skills.",
+        eligibility: "A relevant graduation degree or equivalent technical skills.",
         skills: [
             "Programming",
             "Problem Solving",
@@ -46,14 +44,12 @@ const careers = {
         category: "Technology",
         icon: "📊",
         title: "Data Scientist",
-        shortDescription:
-            "Use data, statistics and machine learning to solve real-world problems.",
+        shortDescription: "Use data, statistics and machine learning to solve real-world problems.",
         education: "BCA / B.Tech / B.Sc / Mathematics / Statistics",
         duration: "3–4 Years + Specialization",
         workType: "IT / Data",
         demand: "High",
-        eligibility:
-            "Graduation with strong mathematics, statistics or programming knowledge.",
+        eligibility: "Graduation with strong mathematics, statistics or programming knowledge.",
         skills: [
             "Python",
             "Statistics",
@@ -86,14 +82,12 @@ const careers = {
         category: "Medical",
         icon: "🩺",
         title: "Doctor",
-        shortDescription:
-            "Diagnose, treat and help patients maintain their health.",
+        shortDescription: "Diagnose, treat and help patients maintain their health.",
         education: "MBBS",
         duration: "5.5 Years",
         workType: "Healthcare",
         demand: "High",
-        eligibility:
-            "10+2 with required science subjects and qualifying medical admission requirements.",
+        eligibility: "10+2 with required science subjects and qualifying medical admission requirements.",
         skills: [
             "Medical Knowledge",
             "Communication",
@@ -123,16 +117,14 @@ const careers = {
 
     "Chartered Accountant": {
         category: "Finance",
-        icon: "📈",
+        icon: "📊",
         title: "Chartered Accountant",
-        shortDescription:
-            "Work in accounting, auditing, taxation and financial management.",
+        shortDescription: "Work in accounting, auditing, taxation and financial management.",
         education: "B.Com / Commerce + CA Course",
         duration: "Varies by pathway",
         workType: "Finance / Accounting",
         demand: "High",
-        eligibility:
-            "Students can enter the CA pathway according to ICAI eligibility requirements.",
+        eligibility: "Students can enter the CA pathway according to ICAI eligibility requirements.",
         skills: [
             "Accounting",
             "Financial Analysis",
@@ -166,14 +158,12 @@ const careers = {
         category: "Law",
         icon: "⚖️",
         title: "Lawyer",
-        shortDescription:
-            "Provide legal advice and represent clients in legal matters.",
+        shortDescription: "Provide legal advice and represent clients in legal matters.",
         education: "LLB / BA LLB",
         duration: "3–5 Years",
         workType: "Legal",
         demand: "High",
-        eligibility:
-            "Required qualifications depend on the chosen law programme.",
+        eligibility: "Required qualifications depend on the chosen law programme.",
         skills: [
             "Communication",
             "Legal Research",
@@ -207,14 +197,12 @@ const careers = {
         category: "Defence",
         icon: "✈️",
         title: "Air Force Officer",
-        shortDescription:
-            "Serve as an officer in the Indian Air Force in different branches and roles.",
+        shortDescription: "Serve as an officer in the Indian Air Force in different branches and roles.",
         education: "Graduation / Relevant Qualification",
         duration: "Depends on Entry",
         workType: "Defence",
         demand: "Government Service",
-        eligibility:
-            "Eligibility depends on the specific Indian Air Force officer entry and branch.",
+        eligibility: "Eligibility depends on the specific Indian Air Force officer entry and branch.",
         skills: [
             "Leadership",
             "Discipline",
@@ -248,14 +236,12 @@ const careers = {
         category: "Marketing",
         icon: "📱",
         title: "Digital Marketer",
-        shortDescription:
-            "Promote brands, products and services using digital platforms.",
+        shortDescription: "Promote brands, products and services using digital platforms.",
         education: "Any Relevant Graduation / Digital Marketing Certification",
         duration: "3–4 Years + Certifications",
         workType: "Marketing / Digital",
         demand: "High",
-        eligibility:
-            "Graduation can be helpful, along with relevant digital marketing skills.",
+        eligibility: "Graduation can be helpful, along with relevant digital marketing skills.",
         skills: [
             "SEO",
             "Social Media Marketing",
@@ -288,14 +274,12 @@ const careers = {
         category: "Design",
         icon: "🎨",
         title: "UI/UX Designer",
-        shortDescription:
-            "Design attractive, accessible and user-friendly digital experiences.",
+        shortDescription: "Design attractive, accessible and user-friendly digital experiences.",
         education: "B.Des / Design / Computer Applications / Relevant Course",
         duration: "3–4 Years + Portfolio",
         workType: "Design / Technology",
         demand: "High",
-        eligibility:
-            "Relevant education and a strong design portfolio can help.",
+        eligibility: "Relevant education and a strong design portfolio can help.",
         skills: [
             "UI Design",
             "UX Research",
@@ -328,14 +312,12 @@ const careers = {
         category: "Education",
         icon: "👨‍🏫",
         title: "Teacher",
-        shortDescription:
-            "Help students learn, develop knowledge and build important skills.",
+        shortDescription: "Help students learn, develop knowledge and build important skills.",
         education: "Graduation + B.Ed / Relevant Teaching Qualification",
         duration: "Varies",
         workType: "Education",
         demand: "High",
-        eligibility:
-            "Qualifications depend on the teaching level and institution.",
+        eligibility: "Qualifications depend on the teaching level and institution.",
         skills: [
             "Communication",
             "Teaching",
@@ -369,14 +351,12 @@ const careers = {
         category: "Government",
         icon: "🏛️",
         title: "IAS Officer",
-        shortDescription:
-            "Work in public administration and contribute to government administration and policy implementation.",
+        shortDescription: "Work in public administration and contribute to government administration and policy implementation.",
         education: "Graduation",
         duration: "Graduation + Civil Services Preparation",
         workType: "Government",
         demand: "Government Service",
-        eligibility:
-            "Graduation and other eligibility requirements prescribed for the Civil Services Examination.",
+        eligibility: "Graduation and other eligibility requirements prescribed for the Civil Services Examination.",
         skills: [
             "Leadership",
             "Administration",
@@ -408,14 +388,12 @@ const careers = {
         category: "Engineering",
         icon: "⚙️",
         title: "Engineer",
-        shortDescription:
-            "Apply science and mathematics to design, build and improve systems and technology.",
+        shortDescription: "Apply science and mathematics to design, build and improve systems and technology.",
         education: "B.Tech / B.E.",
         duration: "4 Years",
         workType: "Engineering / Technology",
         demand: "High",
-        eligibility:
-            "10+2 with required subjects and applicable admission requirements.",
+        eligibility: "10+2 with required subjects and applicable admission requirements.",
         skills: [
             "Mathematics",
             "Problem Solving",
@@ -449,14 +427,12 @@ const careers = {
         category: "Media",
         icon: "🎥",
         title: "Content Creator",
-        shortDescription:
-            "Create engaging digital content for platforms such as websites and social media.",
+        shortDescription: "Create engaging digital content for websites and social media.",
         education: "Any Relevant Education + Content Skills",
         duration: "Flexible",
         workType: "Media / Digital",
         demand: "Growing",
-        eligibility:
-            "There is no single mandatory degree; skills, creativity and portfolio are important.",
+        eligibility: "There is no single mandatory degree; skills, creativity and portfolio are important.",
         skills: [
             "Content Writing",
             "Video Editing",
@@ -489,58 +465,33 @@ const careers = {
 
 // ================= GET CAREER FROM URL =================
 
-const params =
-    new URLSearchParams(window.location.search);
+const params = new URLSearchParams(window.location.search);
 
-const selectedCareer =
-    params.get("career");
+const selectedCareer = params.get("career");
 
 
 // ================= LOAD CAREER =================
 
 function loadCareer() {
 
-    const career =
-        careers[selectedCareer];
-
+    const career = careers[selectedCareer];
 
     if (!career) {
-
-        console.log(
-            "Career not found:",
-            selectedCareer
-        );
-
+        console.log("Career not found:", selectedCareer);
         return;
-
     }
-
-
-    // Title
 
     document.getElementById("careerTitle").innerText =
         career.title;
 
-
-    // Category
-
     document.getElementById("careerCategory").innerText =
         career.category;
-
-
-    // Icon
 
     document.getElementById("careerIcon").innerText =
         career.icon;
 
-
-    // Short description
-
     document.getElementById("careerDescription").innerText =
         career.shortDescription;
-
-
-    // Quick information
 
     document.getElementById("education").innerText =
         career.education;
@@ -554,9 +505,6 @@ function loadCareer() {
     document.getElementById("demand").innerText =
         career.demand;
 
-
-    // Eligibility
-
     document.getElementById("eligibility").innerText =
         career.eligibility;
 
@@ -566,18 +514,20 @@ function loadCareer() {
     const skillsContainer =
         document.getElementById("skills");
 
-    skillsContainer.innerHTML = "";
+    if (skillsContainer) {
 
-    career.skills.forEach(function(skill) {
+        skillsContainer.innerHTML = "";
 
-        const span =
-            document.createElement("span");
+        career.skills.forEach(function(skill) {
 
-        span.innerText = skill;
+            const span = document.createElement("span");
 
-        skillsContainer.appendChild(span);
+            span.innerText = skill;
 
-    });
+            skillsContainer.appendChild(span);
+
+        });
+    }
 
 
     // Subjects
@@ -585,18 +535,20 @@ function loadCareer() {
     const subjectsContainer =
         document.getElementById("subjects");
 
-    subjectsContainer.innerHTML = "";
+    if (subjectsContainer) {
 
-    career.subjects.forEach(function(subject) {
+        subjectsContainer.innerHTML = "";
 
-        const li =
-            document.createElement("li");
+        career.subjects.forEach(function(subject) {
 
-        li.innerText = subject;
+            const li = document.createElement("li");
 
-        subjectsContainer.appendChild(li);
+            li.innerText = subject;
 
-    });
+            subjectsContainer.appendChild(li);
+
+        });
+    }
 
 
     // Exams
@@ -604,38 +556,41 @@ function loadCareer() {
     const examsContainer =
         document.getElementById("exams");
 
-    examsContainer.innerHTML = "";
+    if (examsContainer) {
 
-    career.exams.forEach(function(exam) {
+        examsContainer.innerHTML = "";
 
-        const li =
-            document.createElement("li");
+        career.exams.forEach(function(exam) {
 
-        li.innerText = exam;
+            const li = document.createElement("li");
 
-        examsContainer.appendChild(li);
+            li.innerText = exam;
 
-    });
+            examsContainer.appendChild(li);
+
+        });
+    }
 
 
-    // Jobs
+    // Job Roles
 
     const jobsContainer =
         document.getElementById("jobRoles");
 
-    jobsContainer.innerHTML = "";
+    if (jobsContainer) {
 
-    career.jobs.forEach(function(job) {
+        jobsContainer.innerHTML = "";
 
-        const li =
-            document.createElement("li");
+        career.jobs.forEach(function(job) {
 
-        li.innerText = job;
+            const li = document.createElement("li");
 
-        jobsContainer.appendChild(li);
+            li.innerText = job;
 
-    });
+            jobsContainer.appendChild(li);
 
+        });
+    }
 }
 
 
@@ -647,16 +602,13 @@ function saveCareer() {
         return;
     }
 
-
     let savedCareers =
         JSON.parse(
             localStorage.getItem("savedCareers")
         ) || [];
 
 
-    if (
-        !savedCareers.includes(selectedCareer)
-    ) {
+    if (!savedCareers.includes(selectedCareer)) {
 
         savedCareers.push(selectedCareer);
 
@@ -676,9 +628,7 @@ function saveCareer() {
             selectedCareer +
             " is already saved."
         );
-
     }
-
 }
 
 
