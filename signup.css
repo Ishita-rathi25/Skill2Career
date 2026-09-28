@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #faf9ff;
+    color: #18152b;
+}
+
+
+/* ================= MAIN ================= */
+
+.signup-page {
+    min-height: 100vh;
+
+    display: flex;
+}
+
+
+/* ================= LEFT ================= */
+
+.signup-left {
+    width: 48%;
+
+    background:
+        radial-gradient(
+            circle at 70% 30%,
+            #b79cff,
+            #7c4dff 45%,
+            #5c35c9
+        );
+
+    color: white;
+
+    padding: 45px 7%;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Decorative circle */
+
+.signup-left::after {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    border-radius: 50%;
+
+    right: -130px;
+    bottom: -120px;
+}
+
+
+/* BRAND */
+
+.brand {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.brand span {
+    color: #e2d8ff;
+}
+
+
+/* LEFT CONTENT */
+
+.left-content {
+    max-width: 520px;
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+
+.small-title {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+    margin-bottom: 18px;
+
+    opacity: 0.85;
+}
+
+
+.left-content h1 {
+    font-size: 45px;
+
+    line-height: 1.15;
+
+    margin-bottom: 22px;
+}
+
+
+.left-content h1 span {
+    color: #e8ddff;
+}
+
+
+.left-content > p {
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    max-width: 480px;
+
+    opacity: 0.9;
+}
+
+
+/* BENEFITS */
+
+.benefits {
+    margin-top: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.benefits div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 14px;
+}
+
+
+.benefits span {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.18);
+
+    font-weight: bold;
+}
+
+
+/* ================= RIGHT ================= */
+
+.signup-right {
+    width: 52%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 40px 20px;
+
+    background: #faf9ff;
+}
+
+
+/* CARD */
+
+.signup-card {
+    width: 100%;
+
+    max-width: 480px;
+
+    background: white;
+
+    padding: 35px 40px;
+
+    border-radius: 18px;
+
+    border: 1px solid #ebe7f4;
+
+    box-shadow:
+        0 15px 45px rgba(70, 45, 120, 0.08);
+}
+
+
+/* MOBILE LOGO */
+
+.mobile-logo {
+    display: none;
+
+    text-align: center;
+
+    font-size: 23px;
+
+    font-weight: 800;
+
+    margin-bottom: 20px;
+}
+
+.mobile-logo span {
+    color: #7c4dff;
+}
+
+
+/* HEADING */
+
+.signup-card h2 {
+    font-size: 28px;
+
+    margin-bottom: 7px;
+}
+
+
+.subtitle {
+    color: #777286;
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+}
+
+
+/* LABEL */
+
+.signup-card form > label {
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+
+    color: #3d394d;
+}
+
+
+/* INPUT */
+
+.input-box {
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    border: 1px solid #e2deeb;
+
+    border-radius: 9px;
+
+    padding: 0 13px;
+
+    margin-bottom: 17px;
+
+    transition: 0.3s;
+}
+
+
+.input-box:focus-within {
+    border-color: #7c4dff;
+
+    box-shadow:
+        0 0 0 3px rgba(124,77,255,0.08);
+}
+
+
+.input-box > span {
+    font-size: 15px;
+}
+
+
+.input-box input,
+.input-box select {
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    color: #333042;
+}
+
+
+.input-box select {
+    cursor: pointer;
+}
+
+
+/* EYE */
+
+.eye {
+    border: none;
+
+    background: none;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+/* TERMS */
+
+.terms {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 2px 0 15px;
+}
+
+
+.terms input {
+    accent-color: #7c4dff;
+
+    cursor: pointer;
+}
+
+
+.terms label {
+    font-size: 11px;
+
+    color: #777286;
+}
+
+
+.terms a {
+    color: #7c4dff;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+/* MESSAGE */
+
+#message {
+    font-size: 12px;
+
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+
+/* CREATE BUTTON */
+
+.create-btn {
+    width: 100%;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #7c4dff;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.create-btn:hover {
+    background: #6939e8;
+
+    transform: translateY(-1px);
+}
+
+
+/* LOGIN */
+
+.login-text {
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #777286;
+
+    font-size: 12px;
+}
+
+
+.login-text a {
+    color: #7c4dff;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 850px) {
+
+    .signup-page {
+        display: block;
+    }
+
+    .signup-left {
+        display: none;
+    }
+
+    .signup-right {
+        width: 100%;
+
+        min-height: 100vh;
+
+        padding: 25px 15px;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+
+    .signup-card {
+        padding: 30px 25px;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .signup-card {
+        padding: 25px 18px;
+
+        border: none;
+
+        box-shadow: none;
+    }
+
+    .signup-right {
+        background: white;
+    }
+}

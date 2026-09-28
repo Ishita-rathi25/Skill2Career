@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Career Quiz - Skill2Career</title>
+
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Skill<span>2</span>Career
+        </div>
+
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="#">Careers</a>
+            <a href="courses.html">Courses</a>
+            <a href="quiz.html" class="active">Quiz</a>
+            <a href="#">Resources</a>
+            <a href="#">About</a>
+        </div>
+
+        <div class="nav-buttons">
+
+            <button class="login-btn"
+                onclick="window.location.href='login.html'">
+                Login
+            </button>
+
+            <button class="signup-btn"
+                onclick="window.location.href='signup.html'">
+                Sign Up
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= QUIZ HEADER ================= -->
+
+    <section class="quiz-header">
+
+        <p class="small-title">CAREER DISCOVERY</p>
+
+        <h1>Find Your Perfect Career</h1>
+
+        <p>
+            Answer a few simple questions and discover
+            careers that match your interests and strengths.
+        </p>
+
+    </section>
+
+
+    <!-- ================= QUIZ ================= -->
+
+    <main class="quiz-container">
+
+        <!-- Progress -->
+
+        <div class="progress-area">
+
+            <div class="progress-info">
+                <span id="questionNumber">
+                    Question 1 of 8
+                </span>
+
+                <span id="progressPercent">
+                    0%
+                </span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+
+        </div>
+
+
+        <!-- Question -->
+
+        <div class="question-card">
+
+            <h2 id="question">
+                What type of work do you enjoy the most?
+            </h2>
+
+            <div id="options" class="options">
+
+                <!-- Options JavaScript se aayenge -->
+
+            </div>
+
+
+            <div class="quiz-buttons">
+
+                <button
+                    id="previousBtn"
+                    class="previous-btn"
+                    onclick="previousQuestion()"
+                    disabled>
+                    ← Previous
+                </button>
+
+                <button
+                    id="nextBtn"
+                    class="next-btn"
+                    onclick="nextQuestion()">
+                    Next →
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= RESULT ================= -->
+
+    <section
+        id="resultSection"
+        class="result-section">
+
+        <div class="result-card">
+
+            <div class="result-icon">
+                🎯
+            </div>
+
+            <p class="result-small">
+                YOUR RECOMMENDED CAREER
+            </p>
+
+            <h2 id="resultCareer">
+                Software Developer
+            </h2>
+
+            <p id="resultDescription">
+                Your answers indicate that you may enjoy
+                technology and problem-solving careers.
+            </p>
+
+            <div class="result-buttons">
+
+                <button
+                    onclick="viewResultCareer()"
+                    class="result-primary">
+                    View Career Details →
+                </button>
+
+                <button
+                    onclick="restartQuiz()"
+                    class="result-secondary">
+                    Retake Quiz
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Skill<span>2</span>Career
+        </div>
+
+        <p>
+            Helping students choose the right career
+            and build the right skills.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="home.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="home.html">Careers</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="resources.html">Resources</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Skill2Career. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="quiz.js"></script>
+
+</body>
+</html>

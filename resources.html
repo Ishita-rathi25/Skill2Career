@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resources - Skill2Career</title>
+
+    <link rel="stylesheet" href="resources.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Skill<span>2</span>Career
+        </div>
+
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="#">Careers</a>
+            <a href="courses.html">Courses</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="resources.html" class="active">Resources</a>
+            <a href="#">About</a>
+        </div>
+
+        <div class="nav-buttons">
+
+            <button class="login-btn"
+                onclick="window.location.href='login.html'">
+                Login
+            </button>
+
+            <button class="signup-btn"
+                onclick="window.location.href='signup.html'">
+                Sign Up
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="resource-hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">LEARN • EXPLORE • GROW</p>
+
+            <h1>Resources to Build Your Future</h1>
+
+            <p>
+                Explore useful learning materials, websites,
+                books and tools to improve your career journey.
+            </p>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="resourceSearch"
+                    placeholder="Search resources..."
+                    onkeyup="searchResources()">
+
+                <button onclick="searchResources()">
+                    🔍
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="resource-categories">
+
+        <h2>Explore Resources</h2>
+
+        <p>
+            Find resources according to your learning needs.
+        </p>
+
+        <div class="category-buttons">
+
+            <button
+                class="category active"
+                onclick="filterResources('all', this)">
+                All
+            </button>
+
+            <button
+                class="category"
+                onclick="filterResources('learning', this)">
+                Learning
+            </button>
+
+            <button
+                class="category"
+                onclick="filterResources('books', this)">
+                Books
+            </button>
+
+            <button
+                class="category"
+                onclick="filterResources('coding', this)">
+                Coding
+            </button>
+
+            <button
+                class="category"
+                onclick="filterResources('career', this)">
+                Career
+            </button>
+
+            <button
+                class="category"
+                onclick="filterResources('exam', this)">
+                Exams
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RESOURCE CARDS ================= -->
+
+    <section class="resources-section">
+
+        <div class="resources-container">
+
+
+            <!-- RESOURCE 1 -->
+
+            <div class="resource-card"
+                data-category="learning"
+                data-name="Online Learning">
+
+                <div class="resource-icon">
+                    📚
+                </div>
+
+                <span class="resource-category">
+                    Learning
+                </span>
+
+                <h3>Online Learning</h3>
+
+                <p>
+                    Explore online courses and learning
+                    materials to develop new skills.
+                </p>
+
+                <button onclick="openResource('Online Learning')">
+                    Explore →
+                </button>
+
+            </div>
+
+
+            <!-- RESOURCE 2 -->
+
+            <div class="resource-card"
+                data-category="coding"
+                data-name="Programming Practice">
+
+                <div class="resource-icon">
+                    💻
+                </div>
+
+                <span class="resource-category">
+                    Coding
+                </span>
+
+                <h3>Programming Practice</h3>
+
+                <p>
+                    Practice programming concepts and
+                    improve your coding problem-solving skills.
+                </p>
+
+                <button onclick="openResource('Programming Practice')">
+                    Explore →
+                </button>
+
+            </div>
+
+
+            <!-- RESOURCE 3 -->
+
+            <div class="resource-card"
+                data-category="books"
+                data-name="Career Books">
+
+                <div class="resource-icon">
+                    📖
+                </div>
+
+                <span class="resource-category">
+                    Books
+                </span>
+
+                <h3>Career Books</h3>
+
+                <p>
+                    Discover books that can help you understand
+                    careers, skills and professional growth.
+                </p>
+
+                <button onclick="openResource('Career Books')">
+                    Explore →
+                </button>
+
+            </div>
+
+
+            <!-- RESOURCE 4 -->
+
+            <div class="resource-card"
+                data-category="career"
+                data-name="Career Guidance">
+
+                <div class="resource-icon">
+                    🎯
+                </div>
+
+                <span class="resource-category">
+                    Career
+                </span>
+
+                <h3>Career Guidance</h3>
+
+                <p>
+                    Learn about different career paths,
+                    qualifications and job opportunities.
+                </p>
+
+                <button onclick="openResource('Career Guidance')">
+                    Explore →
+                </button>
+
+            </div>
+
+
+            <!-- RESOURCE 5 -->
+
+            <div class="resource-card"
+                data-category="exam"
+                data-name="Entrance Exams">
+
+                <div class="resource-icon">
+                    📝
+                </div>
+
+                <span class="resource-category">
+                    Exams
+                </span>
+
+                <h3>Entrance Exams</h3>
+
+                <p>
+                    Find information about entrance exams,
+                    eligibility and preparation resources.
+                </p>
+
+                <button onclick="openResource('Entrance Exams')">
+                    Explore →
+                </button>
+
+            </div>
+
+
+            <!-- RESOURCE 6 -->
+
+            <div class="resource-card"
+                data-category="learning"
+                data-name="Skill Development">
+
+                <div class="resource-icon">
+                    🚀
+                </div>
+
+                <span class="resource-category">
+                    Learning
+                </span>
+
+                <h3>Skill Development</h3>
+
+                <p>
+                    Improve technical and soft skills required
+                    for your future career.
+                </p>
+
+                <button onclick="openResource('Skill Development')">
+                    Explore →
+                </button>
+
+            </div>
+
+
+            <!-- RESOURCE 7 -->
+
+            <div class="resource-card"
+                data-category="coding"
+                data-name="Web Development">
+
+                <div class="resource-icon">
+                    🌐
+                </div>
+
+                <span class="resource-category">
+                    Coding
+                </span>
+
+                <h3>Web Development</h3>
+
+                <p>
+                    Learn HTML, CSS, JavaScript and other
+                    technologies used in web development.
+                </p>
+
+                <button onclick="openResource('Web Development')">
+                    Explore →
+                </button>
+
+            </div>
+
+
+            <!-- RESOURCE 8 -->
+
+            <div class="resource-card"
+                data-category="career"
+                data-name="Resume Building">
+
+                <div class="resource-icon">
+                    📄
+                </div>
+
+                <span class="resource-category">
+                    Career
+                </span>
+
+                <h3>Resume Building</h3>
+
+                <p>
+                    Learn how to create a professional resume
+                    and present your skills effectively.
+                </p>
+
+                <button onclick="openResource('Resume Building')">
+                    Explore →
+                </button>
+
+            </div>
+
+
+        </div>
+
+        <p id="noResult" class="no-result">
+            No resources found.
+        </p>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="resource-cta">
+
+        <h2>Still Confused About Your Career?</h2>
+
+        <p>
+            Take our Career Quiz and discover careers
+            that match your interests.
+        </p>
+
+        <button onclick="window.location.href='quiz.html'">
+            Take Career Quiz →
+        </button>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Skill<span>2</span>Career
+        </div>
+
+        <p>
+            Helping students choose the right career
+            and build the right skills.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="home.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="resources.html">Resources</a>
+            
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Skill2Career. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="resources.js"></script>
+
+</body>
+</html>

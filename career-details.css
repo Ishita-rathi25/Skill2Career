@@ -1,0 +1,652 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #faf9ff;
+    color: #19162c;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    height: 75px;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    border-bottom: 1px solid #ebe7f3;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #7c4dff;
+}
+
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #5f5a70;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #7c4dff;
+}
+
+
+.profile-btn {
+    border: 1px solid #7c4dff;
+
+    background: white;
+
+    color: #7c4dff;
+
+    padding: 9px 18px;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* ================= HERO ================= */
+
+.career-hero {
+    background:
+        linear-gradient(
+            135deg,
+            #eee8ff,
+            #faf9ff
+        );
+
+    padding: 55px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.hero-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.career-icon {
+    width: 90px;
+    height: 90px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 45px;
+
+    box-shadow:
+        0 10px 30px rgba(80,50,150,0.1);
+}
+
+
+.category-name {
+    color: #7c4dff;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
+}
+
+
+.career-hero h1 {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+
+.career-hero p:last-child {
+    color: #6f697d;
+
+    font-size: 14px;
+
+    max-width: 650px;
+
+    line-height: 1.6;
+}
+
+
+/* SAVE */
+
+.save-btn {
+    border: 1px solid #7c4dff;
+
+    background: white;
+
+    color: #7c4dff;
+
+    padding: 12px 20px;
+
+    border-radius: 9px;
+
+    font-family: inherit;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.save-btn:hover,
+.save-btn.saved {
+    background: #7c4dff;
+
+    color: white;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.details-container {
+    max-width: 1100px;
+
+    margin: 45px auto;
+
+    padding: 0 20px;
+}
+
+
+/* ================= CARD ================= */
+
+.content-card {
+    background: white;
+
+    border: 1px solid #e8e4f0;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    margin-bottom: 22px;
+
+    box-shadow:
+        0 5px 20px rgba(50,35,90,0.03);
+}
+
+
+.content-card h2 {
+    font-size: 20px;
+
+    margin-bottom: 18px;
+}
+
+
+.content-card > p {
+    color: #6d6879;
+
+    line-height: 1.8;
+
+    font-size: 14px;
+}
+
+
+/* ================= QUICK INFO ================= */
+
+.info-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+
+.info-box {
+    background: #faf9ff;
+
+    border: 1px solid #eeeaf6;
+
+    border-radius: 11px;
+
+    padding: 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.info-box > span {
+    font-size: 25px;
+}
+
+
+.info-box small {
+    display: block;
+
+    color: #888296;
+
+    font-size: 10px;
+
+    margin-bottom: 5px;
+}
+
+
+.info-box strong {
+    font-size: 12px;
+}
+
+
+/* ================= LIST ================= */
+
+.content-card ul {
+    padding-left: 20px;
+}
+
+.content-card li {
+    color: #6d6879;
+
+    font-size: 13px;
+
+    margin-bottom: 12px;
+
+    line-height: 1.6;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skills-container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+.skills-container span {
+    background: #f0ebff;
+
+    color: #7040e8;
+
+    padding: 9px 14px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* ================= SUBJECTS ================= */
+
+.subject-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+
+.subject-grid div {
+    padding: 15px;
+
+    border: 1px solid #e9e5f2;
+
+    border-radius: 9px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #555064;
+}
+
+
+/* ================= EXAMS ================= */
+
+.exam-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.exam-list div {
+    background: #faf9ff;
+
+    padding: 17px;
+
+    border-radius: 10px;
+
+    border-left: 4px solid #7c4dff;
+}
+
+
+.exam-list strong {
+    display: block;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+
+.exam-list span {
+    color: #777286;
+
+    font-size: 11px;
+}
+
+
+/* ================= JOBS ================= */
+
+.job-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+
+.job-grid div {
+    background: #f8f5ff;
+
+    padding: 15px;
+
+    border-radius: 9px;
+
+    color: #5d4a91;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* ================= GROWTH ================= */
+
+.growth {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.growth-step {
+    text-align: center;
+
+    max-width: 180px;
+}
+
+
+.growth-step span {
+    width: 38px;
+    height: 38px;
+
+    background: #7c4dff;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: auto auto 10px;
+
+    font-weight: 700;
+}
+
+
+.growth-step strong {
+    font-size: 12px;
+}
+
+
+.growth-step p {
+    color: #777286;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    margin-top: 6px;
+}
+
+
+.line {
+    width: 45px;
+
+    height: 2px;
+
+    background: #d9d0f4;
+
+    margin-bottom: 35px;
+}
+
+
+/* ================= RELATED ================= */
+
+.related-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+
+.related-grid button {
+    background: #faf9ff;
+
+    border: 1px solid #e8e3f1;
+
+    border-radius: 10px;
+
+    padding: 15px 10px;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.related-grid button:hover {
+    background: #7c4dff;
+
+    color: white;
+
+    border-color: #7c4dff;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #18152b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+
+.footer-logo {
+    font-size: 23px;
+
+    font-weight: 800;
+
+    margin-bottom: 8px;
+}
+
+.footer-logo span {
+    color: #9a72ff;
+}
+
+
+footer p {
+    color: #aaa5bb;
+
+    font-size: 12px;
+}
+
+
+.copyright {
+    margin-top: 18px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 850px) {
+
+    nav {
+        display: none;
+    }
+
+    .career-hero {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .save-btn {
+        align-self: flex-start;
+    }
+
+    .info-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .related-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .career-hero {
+        padding: 40px 5%;
+    }
+
+    .hero-left {
+        align-items: flex-start;
+    }
+
+    .career-icon {
+        width: 65px;
+        height: 65px;
+
+        font-size: 30px;
+    }
+
+    .career-hero h1 {
+        font-size: 27px;
+    }
+
+    .info-grid,
+    .subject-grid,
+    .job-grid,
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .growth {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .line {
+        width: 2px;
+        height: 30px;
+
+        margin: 0;
+    }
+
+    .content-card {
+        padding: 22px;
+    }
+}

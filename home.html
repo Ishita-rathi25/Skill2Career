@@ -1,0 +1,567 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skill2Career - Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>Skill</span><b>2</b><span>Career</span>
+        </div>
+
+        <nav>
+            <a href="home.html" class="active">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="resources.html">Resources</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="about.html">About</a>
+        </nav>
+
+<div class="nav-buttons">
+    <button class="login-btn" onclick="window.location.href='login.html'">
+        Login
+    </button>
+
+    <button class="signup-btn" onclick="window.location.href='signup.html'">
+        Sign Up
+    </button>
+</div>
+
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-heading">
+                LEARN • EXPLORE • GROW
+            </p>
+
+            <h1>
+                Build Your Career.<br>
+                <span>Shape Your Future.</span>
+            </h1>
+
+            <p class="hero-text">
+                Explore career options, discover your interests,
+                learn new skills and choose the right career path
+                for your future.
+            </p>
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <span>🔍</span>
+
+                <input
+                    type="text"
+                    id="careerSearch"
+                    placeholder="Search careers, skills or fields..."
+                    onkeyup="searchCareer()"
+                >
+
+                <button onclick="searchCareer()">
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories-section" id="categories">
+
+        <div class="section-heading">
+
+            <p>EXPLORE</p>
+
+            <h2>Career Categories</h2>
+
+            <span>
+                Find the career field that matches your interests.
+            </span>
+
+        </div>
+
+
+        <div class="category-container">
+
+            <button class="category active" onclick="filterCareer('all')">
+                🌟 All
+            </button>
+
+            <button class="category" onclick="filterCareer('technology')">
+                💻 Technology & IT
+            </button>
+
+            <button class="category" onclick="filterCareer('medical')">
+                🩺 Medical & Healthcare
+            </button>
+
+            <button class="category" onclick="filterCareer('business')">
+                📊 Business & Management
+            </button>
+
+            <button class="category" onclick="filterCareer('law')">
+                ⚖️ Law
+            </button>
+
+            <button class="category" onclick="filterCareer('defence')">
+                ✈️ Defence
+            </button>
+
+            <button class="category" onclick="filterCareer('finance')">
+                🏦 Banking & Finance
+            </button>
+
+            <button class="category" onclick="filterCareer('design')">
+                🎨 Design & Creative
+            </button>
+
+            <button class="category" onclick="filterCareer('education')">
+                👨‍🏫 Education
+            </button>
+
+            <button class="category" onclick="filterCareer('science')">
+                🔬 Science & Research
+            </button>
+
+            <button class="category" onclick="filterCareer('government')">
+                🏛️ Government
+            </button>
+
+            <button class="category" onclick="filterCareer('media')">
+                📱 Media & Communication
+            </button>
+
+            <button class="category" onclick="filterCareer('engineering')">
+                🏗️ Engineering
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CAREERS ================= -->
+
+    <section class="career-section" id="careers">
+
+        <div class="section-heading">
+
+            <p>DISCOVER</p>
+
+            <h2>Popular Career Options</h2>
+
+            <span>
+                Explore different careers and discover what suits you.
+            </span>
+
+        </div>
+
+
+        <div class="career-grid" id="careerGrid">
+
+
+            <!-- SOFTWARE DEVELOPER -->
+
+            <div class="career-card" data-category="technology">
+
+                <div class="career-icon">💻</div>
+
+                <h3>Software Developer</h3>
+
+                <p>
+                    Build websites, applications and software
+                    using programming languages.
+                </p>
+
+                <div class="career-info">
+                    <span>💰 High Demand</span>
+                    <span>🎓 B.Tech / BCA</span>
+                </div>
+
+                <div class="career-card" data-category="technology">
+
+   <!--
+    <h3>Software Developer</h3>
+
+    <p>
+        Build websites, applications and software
+        using programming languages.
+    </p>
+
+    <div class="career-info">
+        <span>💰 High Demand</span>
+        <span>🎓 BCA / B.Tech</span>
+    </div>-->
+
+    <button onclick="viewCareer('Software Developer')">
+        View Details →
+    </button>  
+
+</div>
+
+            </div>
+
+
+            <!-- DATA SCIENTIST -->
+
+            <div class="career-card" data-category="technology">
+
+                <div class="career-icon">📈</div>
+
+                <h3>Data Scientist</h3>
+
+                <p>
+                    Analyze data and use machine learning to
+                    solve real-world problems.
+                </p>
+
+                <div class="career-info">
+                    <span>💰 High Demand</span>
+                    <span>🎓 Degree + Skills</span>
+                </div>
+
+                <button onclick="viewCareer('Data Scientist')">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- DOCTOR -->
+
+            <div class="career-card" data-category="medical">
+
+                <div class="career-icon">🩺</div>
+
+                <h3>Doctor</h3>
+
+                <p>
+                    Diagnose diseases and provide medical
+                    treatment to patients.
+                </p>
+
+                <div class="career-info">
+                    <span>🏥 Healthcare</span>
+                    <span>🎓 MBBS</span>
+                </div>
+
+                <button onclick="viewCareer('Doctor')">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- CHARTERED ACCOUNTANT -->
+
+            <div class="career-card" data-category="finance">
+
+                <div class="career-icon">📊</div>
+
+                <h3>Chartered Accountant</h3>
+
+                <p>
+                    Work with accounting, taxation, auditing
+                    and financial management.
+                </p>
+
+                <div class="career-info">
+                    <span>💼 Finance</span>
+                    <span>🎓 CA</span>
+                </div>
+
+                <button onclick="viewCareer('Chartered Accountant')">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- LAWYER -->
+
+            <div class="career-card" data-category="law">
+
+                <div class="career-icon">⚖️</div>
+
+                <h3>Lawyer</h3>
+
+                <p>
+                    Provide legal advice and represent clients
+                    in legal matters.
+                </p>
+
+                <div class="career-info">
+                    <span>⚖️ Legal</span>
+                    <span>🎓 LLB</span>
+                </div>
+
+                <button onclick="viewCareer('Lawyer')">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- AIR FORCE OFFICER -->
+
+            <div class="career-card" data-category="defence">
+
+                <div class="career-icon">✈️</div>
+
+                <h3>Air Force Officer</h3>
+
+                <p>
+                    Serve the nation through leadership,
+                    aviation and defence operations.
+                </p>
+
+                <div class="career-info">
+                    <span>🇮🇳 Defence</span>
+                    <span>🎓 Graduation</span>
+                </div>
+
+                <button onclick="viewCareer('Air Force Officer')">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- DIGITAL MARKETER -->
+
+            <div class="career-card" data-category="business">
+
+                <div class="career-icon">📱</div>
+
+                <h3>Digital Marketer</h3>
+
+                <p>
+                    Promote brands and products using digital
+                    marketing platforms.
+                </p>
+
+                <div class="career-info">
+                    <span>📱 Digital</span>
+                    <span>🎓 Any Degree</span>
+                </div>
+
+                <button onclick="viewCareer('Digital Marketer')">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- UI UX DESIGNER -->
+
+            <div class="career-card" data-category="design">
+
+                <div class="career-icon">🎨</div>
+
+                <h3>UI/UX Designer</h3>
+
+                <p>
+                    Design attractive and user-friendly
+                    websites and applications.
+                </p>
+
+                <div class="career-info">
+                    <span>🎨 Creative</span>
+                    <span>💻 Design Skills</span>
+                </div>
+
+                <button onclick="viewCareer('UI/UX Designer')">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- TEACHER -->
+
+            <div class="career-card" data-category="education">
+
+                <div class="career-icon">👨‍🏫</div>
+
+                <h3>Teacher</h3>
+
+                <p>
+                    Educate students and help them develop
+                    knowledge and skills.
+                </p>
+
+                <div class="career-info">
+                    <span>📚 Education</span>
+                    <span>🎓 B.Ed</span>
+                </div>
+
+                <button onclick="viewCareer('Teacher')">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- IAS -->
+
+            <div class="career-card" data-category="government">
+
+                <div class="career-icon">🏛️</div>
+
+                <h3>IAS Officer</h3>
+
+                <p>
+                    Work in public administration and contribute
+                    to government services.
+                </p>
+
+                <div class="career-info">
+                    <span>🇮🇳 Government</span>
+                    <span>🎓 Graduation</span>
+                </div>
+
+                <button onclick="viewCareer('IAS Officer')">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- ENGINEER -->
+
+            <div class="career-card" data-category="engineering">
+
+                <div class="career-icon">🏗️</div>
+
+                <h3>Engineer</h3>
+
+                <p>
+                    Apply science and mathematics to design,
+                    develop and build solutions.
+                </p>
+
+                <div class="career-info">
+                    <span>🔧 Technical</span>
+                    <span>🎓 B.Tech</span>
+                </div>
+
+                <button onclick="viewCareer('Engineer')">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- CONTENT CREATOR -->
+
+            <div class="career-card" data-category="media">
+
+                <div class="career-icon">🎥</div>
+
+                <h3>Content Creator</h3>
+
+                <p>
+                    Create engaging videos, articles and social
+                    media content.
+                </p>
+
+                <div class="career-info">
+                    <span>🎥 Media</span>
+                    <span>💡 Creativity</span>
+                </div>
+
+                <button onclick="viewCareer('Content Creator')">
+                    View Details →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- NO RESULT -->
+
+        <div id="noResult">
+            ❌ No career found.
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta">
+
+        <div>
+
+            <p>NOT SURE WHAT TO CHOOSE?</p>
+
+            <h2>
+                Find the Career That Fits You
+            </h2>
+
+            <span>
+                Take our career quiz and discover careers
+                based on your interests and skills.
+            </span>
+
+        </div>
+
+        <button onclick="startQuiz()">
+            Take Career Quiz →
+        </button>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Skill<span>2</span>Career
+        </div>
+
+        <p>
+            Learn • Explore • Grow
+        </p>
+
+        <p class="copyright">
+            © 2026 Skill2Career. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up - Skill2Career</title>
+
+    <link rel="stylesheet" href="signup.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="signup-page">
+
+        <!-- LEFT SIDE -->
+
+        <div class="signup-left">
+
+            <div class="brand">
+                Skill<span>2</span>Career
+            </div>
+
+            <div class="left-content">
+
+                <p class="small-title">
+                    START YOUR JOURNEY
+                </p>
+
+                <h1>
+                    Build Your Skills.<br>
+                    <span>Shape Your Career.</span>
+                </h1>
+
+                <p>
+                    Create your Skill2Career account and explore
+                    careers, courses and skills that can help you
+                    build a brighter future.
+                </p>
+
+                <div class="benefits">
+
+                    <div>
+                        <span>✓</span>
+                        Explore multiple career options
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Discover useful courses
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Find careers based on your skills
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="signup-right">
+
+            <div class="signup-card">
+
+                <div class="mobile-logo">
+                    Skill<span>2</span>Career
+                </div>
+
+                <h2>Create Account</h2>
+
+                <p class="subtitle">
+                    Start your career journey with us
+                </p>
+
+
+                <!-- FORM -->
+
+                <form id="signupForm">
+
+
+                    <!-- NAME -->
+
+                    <label>Full Name</label>
+
+                    <div class="input-box">
+                        <span>👤</span>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <label>Email Address</label>
+
+                    <div class="input-box">
+                        <span>✉️</span>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- ROLE -->
+
+                    <label>Account Type</label>
+
+                    <div class="input-box">
+
+                        <span>🎓</span>
+
+                        <select id="role" required>
+
+                            <option value="">
+                                Select account type
+                            </option>
+
+                            <option value="student">
+                                Student
+                            </option>
+
+                            <option value="mentor">
+                                Mentor
+                            </option>
+
+                            <option value="admin">
+                                Admin
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <label>Password</label>
+
+                    <div class="input-box">
+
+                        <span>🔒</span>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Create a password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="eye"
+                            onclick="togglePassword('password', this)"
+                        >
+                            👁
+                        </button>
+
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+
+                    <label>Confirm Password</label>
+
+                    <div class="input-box">
+
+                        <span>🔒</span>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm your password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="eye"
+                            onclick="togglePassword('confirmPassword', this)"
+                        >
+                            👁
+                        </button>
+
+                    </div>
+
+
+                    <!-- TERMS -->
+
+                    <div class="terms">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required
+                        >
+
+                        <label for="terms">
+                            I agree to the
+                            <a href="#">Terms & Conditions</a>
+                        </label>
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+
+                    <p id="message"></p>
+
+
+                    <!-- CREATE ACCOUNT -->
+
+                    <button
+                        type="submit"
+                        class="create-btn"
+                    >
+                        Create Account →
+                    </button>
+
+
+                </form>
+
+
+                <!-- LOGIN -->
+
+                <p class="login-text">
+
+                    Already have an account?
+
+                    <a href="login.html">
+                        Login
+                    </a>
+
+                </p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="signup.js"></script>
+
+</body>
+</html>

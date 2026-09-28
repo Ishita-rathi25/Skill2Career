@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Career Details - Skill2Career</title>
+
+    <link rel="stylesheet" href="career-details.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Skill<span>2</span>Career
+        </div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="home.html#careers">Careers</a>
+            <a href="home.html#categories">Categories</a>
+            <a href="#">Courses</a>
+            <a href="#">Quiz</a>
+            <a href="#">Resources</a>
+        </nav>
+
+        <button
+            class="profile-btn"
+            onclick="window.location.href='home.html'"
+        >
+            Home
+        </button>
+
+    </header>
+
+
+    <!-- ================= CAREER HERO ================= -->
+
+    <section class="career-hero">
+
+        <div class="hero-left">
+
+            <div class="career-icon" id="careerIcon">
+                💻
+            </div>
+
+            <div>
+
+                <p class="category-name" id="careerCategory">
+                    Technology & IT
+                </p>
+
+                <h1 id="careerTitle">
+                    Software Developer
+                </h1>
+
+                <p id="careerShortDescription">
+                    Build websites, applications and software
+                    using programming languages.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="save-btn"
+            id="saveButton"
+            onclick="saveCareer()"
+        >
+            ♡ Save Career
+        </button>
+
+    </section>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="details-container">
+
+
+        <!-- OVERVIEW -->
+
+        <section class="content-card">
+
+            <h2>Career Overview</h2>
+
+            <p id="careerOverview">
+                Software developers design, develop, test and
+                maintain software applications. They use
+                programming languages and development tools to
+                create solutions for businesses and users.
+            </p>
+
+        </section>
+
+
+        <!-- QUICK INFO -->
+
+        <section class="content-card">
+
+            <h2>Quick Information</h2>
+
+            <div class="info-grid">
+
+                <div class="info-box">
+
+                    <span>🎓</span>
+
+                    <div>
+                        <small>Education</small>
+                        <strong id="education">
+                            BCA / B.Tech
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <span>⏱️</span>
+
+                    <div>
+                        <small>Course Duration</small>
+                        <strong id="duration">
+                            3–4 Years
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <span>💼</span>
+
+                    <div>
+                        <small>Work Type</small>
+                        <strong id="workType">
+                            IT / Software
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <span>📈</span>
+
+                    <div>
+                        <small>Demand</small>
+                        <strong id="demand">
+                            High
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ELIGIBILITY -->
+
+        <section class="content-card">
+
+            <h2>Eligibility</h2>
+
+            <ul id="eligibilityList">
+
+                <li>12th pass from a recognized board.</li>
+
+                <li>
+                    Mathematics/Computer-related subjects
+                    may be useful depending on the course.
+                </li>
+
+                <li>
+                    Graduation in BCA, B.Tech or a related field
+                    can be useful for many roles.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- SKILLS -->
+
+        <section class="content-card">
+
+            <h2>Required Skills</h2>
+
+            <div
+                class="skills-container"
+                id="skillsContainer"
+            >
+
+                <span>Programming</span>
+                <span>Problem Solving</span>
+                <span>HTML & CSS</span>
+                <span>JavaScript</span>
+                <span>Database</span>
+                <span>Logical Thinking</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- SUBJECTS -->
+
+        <section class="content-card">
+
+            <h2>Important Subjects</h2>
+
+            <div
+                class="subject-grid"
+                id="subjectGrid"
+            >
+
+                <div>Programming</div>
+                <div>Data Structures</div>
+                <div>Database Management</div>
+                <div>Operating Systems</div>
+                <div>Computer Networks</div>
+                <div>Web Development</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ENTRANCE EXAMS -->
+
+        <section class="content-card">
+
+            <h2>Entrance Exams / Certifications</h2>
+
+            <div
+                class="exam-list"
+                id="examList"
+            >
+
+                <div>
+                    <strong>University Entrance Exams</strong>
+                    <span>For admission to certain courses.</span>
+                </div>
+
+                <div>
+                    <strong>Skill Certifications</strong>
+                    <span>
+                        Programming and technology certifications
+                        can help demonstrate skills.
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- JOB ROLES -->
+
+        <section class="content-card">
+
+            <h2>Popular Job Roles</h2>
+
+            <div
+                class="job-grid"
+                id="jobGrid"
+            >
+
+                <div>Software Developer</div>
+                <div>Web Developer</div>
+                <div>Frontend Developer</div>
+                <div>Backend Developer</div>
+                <div>Full Stack Developer</div>
+                <div>Application Developer</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CAREER GROWTH -->
+
+        <section class="content-card">
+
+            <h2>Career Growth</h2>
+
+            <div class="growth">
+
+                <div class="growth-step">
+                    <span>1</span>
+                    <strong>Beginner</strong>
+                    <p>Learn fundamentals and build projects.</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="growth-step">
+                    <span>2</span>
+                    <strong>Junior</strong>
+                    <p>Work on real-world development projects.</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="growth-step">
+                    <span>3</span>
+                    <strong>Senior</strong>
+                    <p>Handle larger projects and responsibilities.</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="growth-step">
+                    <span>4</span>
+                    <strong>Lead</strong>
+                    <p>Lead teams and technical projects.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RELATED CAREERS -->
+
+        <section class="content-card">
+
+            <h2>Related Careers</h2>
+
+            <div class="related-grid">
+
+                <button onclick="openCareer('Data Scientist')">
+                    📊 Data Scientist
+                </button>
+
+                <button onclick="openCareer('UI/UX Designer')">
+                    🎨 UI/UX Designer
+                </button>
+
+                <button onclick="openCareer('Cyber Security Analyst')">
+                    🔐 Cyber Security Analyst
+                </button>
+
+                <button onclick="openCareer('Cloud Engineer')">
+                    ☁️ Cloud Engineer
+                </button>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Skill<span>2</span>Career
+        </div>
+
+        <p>
+            Learn • Explore • Grow
+        </p>
+
+        <p class="copyright">
+            © 2026 Skill2Career. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="career-details.js"></script>
+
+</body>
+
+</html>

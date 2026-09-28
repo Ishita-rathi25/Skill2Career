@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Courses - Skill2Career</title>
+
+    <link rel="stylesheet" href="courses.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Skill<span>2</span>Career
+        </div>
+
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="career-details.html">Careers</a>
+            <a href="courses.html" class="active">Courses</a>
+            <a href="#">Quiz</a>
+            <a href="#">Resources</a>
+            <a href="#">About</a>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="login-btn"
+                onclick="window.location.href='login.html'">
+                Login
+            </button>
+
+            <button class="signup-btn"
+                onclick="window.location.href='signup.html'">
+                Sign Up
+            </button>
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="course-hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">EXPLORE YOUR FUTURE</p>
+
+            <h1>Find the Right Course<br>for Your Career</h1>
+
+            <p>
+                Explore courses, understand eligibility,
+                subjects and career opportunities.
+            </p>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="courseSearch"
+                    placeholder="Search courses..."
+                    onkeyup="searchCourses()"
+                >
+
+                <button onclick="searchCourses()">
+                    🔍
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORY ================= -->
+
+    <section class="categories">
+
+        <h2>Explore Courses</h2>
+
+        <p class="section-text">
+            Choose a category to explore suitable courses.
+        </p>
+
+        <div class="category-buttons">
+
+            <button class="category active"
+                onclick="filterCourses('all', this)">
+                All
+            </button>
+
+            <button class="category"
+                onclick="filterCourses('technology', this)">
+                Technology
+            </button>
+
+            <button class="category"
+                onclick="filterCourses('business', this)">
+                Business
+            </button>
+
+            <button class="category"
+                onclick="filterCourses('medical', this)">
+                Medical
+            </button>
+
+            <button class="category"
+                onclick="filterCourses('law', this)">
+                Law
+            </button>
+
+            <button class="category"
+                onclick="filterCourses('commerce', this)">
+                Commerce
+            </button>
+
+            <button class="category"
+                onclick="filterCourses('design', this)">
+                Design
+            </button>
+
+            <button class="category"
+                onclick="filterCourses('science', this)">
+                Science
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= COURSES ================= -->
+
+    <section class="courses-section">
+
+        <div class="courses-container">
+
+            <!-- BCA -->
+
+            <div class="course-card"
+                data-category="technology"
+                data-name="BCA">
+
+                <div class="course-icon">💻</div>
+
+                <span class="course-category">
+                    Technology
+                </span>
+
+                <h3>BCA</h3>
+
+                <p>
+                    Bachelor of Computer Applications
+                    for students interested in computers
+                    and software.
+                </p>
+
+                <div class="course-info">
+                    <span>⏱ 3 Years</span>
+                    <span>🎓 Graduation</span>
+                </div>
+
+                <button onclick="viewCourse('BCA')">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- B.Tech -->
+
+            <div class="course-card"
+                data-category="technology"
+                data-name="B.Tech">
+
+                <div class="course-icon">⚙️</div>
+
+                <span class="course-category">
+                    Technology
+                </span>
+
+                <h3>B.Tech</h3>
+
+                <p>
+                    Engineering degree covering
+                    technology, programming and
+                    engineering concepts.
+                </p>
+
+                <div class="course-info">
+                    <span>⏱ 4 Years</span>
+                    <span>🎓 Graduation</span>
+                </div>
+
+                <button onclick="viewCourse('B.Tech')">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- BBA -->
+
+            <div class="course-card"
+                data-category="business"
+                data-name="BBA">
+
+                <div class="course-icon">📊</div>
+
+                <span class="course-category">
+                    Business
+                </span>
+
+                <h3>BBA</h3>
+
+                <p>
+                    Learn business management,
+                    marketing, finance and
+                    entrepreneurship.
+                </p>
+
+                <div class="course-info">
+                    <span>⏱ 3 Years</span>
+                    <span>🎓 Graduation</span>
+                </div>
+
+                <button onclick="viewCourse('BBA')">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- MBA -->
+
+            <div class="course-card"
+                data-category="business"
+                data-name="MBA">
+
+                <div class="course-icon">💼</div>
+
+                <span class="course-category">
+                    Business
+                </span>
+
+                <h3>MBA</h3>
+
+                <p>
+                    Postgraduate management course
+                    covering business and leadership.
+                </p>
+
+                <div class="course-info">
+                    <span>⏱ 2 Years</span>
+                    <span>🎓 PG</span>
+                </div>
+
+                <button onclick="viewCourse('MBA')">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- MBBS -->
+
+            <div class="course-card"
+                data-category="medical"
+                data-name="MBBS">
+
+                <div class="course-icon">🩺</div>
+
+                <span class="course-category">
+                    Medical
+                </span>
+
+                <h3>MBBS</h3>
+
+                <p>
+                    Medical degree for students
+                    interested in becoming doctors.
+                </p>
+
+                <div class="course-info">
+                    <span>⏱ 5.5 Years</span>
+                    <span>🎓 Medical</span>
+                </div>
+
+                <button onclick="viewCourse('MBBS')">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- LLB -->
+
+            <div class="course-card"
+                data-category="law"
+                data-name="LLB">
+
+                <div class="course-icon">⚖️</div>
+
+                <span class="course-category">
+                    Law
+                </span>
+
+                <h3>LLB</h3>
+
+                <p>
+                    Study law, legal systems,
+                    contracts and constitutional law.
+                </p>
+
+                <div class="course-info">
+                    <span>⏱ 3 Years</span>
+                    <span>🎓 Graduation</span>
+                </div>
+
+                <button onclick="viewCourse('LLB')">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- B.Com -->
+
+            <div class="course-card"
+                data-category="commerce"
+                data-name="B.Com">
+
+                <div class="course-icon">💰</div>
+
+                <span class="course-category">
+                    Commerce
+                </span>
+
+                <h3>B.Com</h3>
+
+                <p>
+                    Learn accounting, finance,
+                    economics and business.
+                </p>
+
+                <div class="course-info">
+                    <span>⏱ 3 Years</span>
+                    <span>🎓 Graduation</span>
+                </div>
+
+                <button onclick="viewCourse('B.Com')">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- B.Des -->
+
+            <div class="course-card"
+                data-category="design"
+                data-name="B.Des">
+
+                <div class="course-icon">🎨</div>
+
+                <span class="course-category">
+                    Design
+                </span>
+
+                <h3>B.Des</h3>
+
+                <p>
+                    Explore graphic design, product
+                    design and creative thinking.
+                </p>
+
+                <div class="course-info">
+                    <span>⏱ 4 Years</span>
+                    <span>🎓 Graduation</span>
+                </div>
+
+                <button onclick="viewCourse('B.Des')">
+                    View Details →
+                </button>
+
+            </div>
+
+
+            <!-- B.Sc -->
+
+            <div class="course-card"
+                data-category="science"
+                data-name="B.Sc">
+
+                <div class="course-icon">🔬</div>
+
+                <span class="course-category">
+                    Science
+                </span>
+
+                <h3>B.Sc</h3>
+
+                <p>
+                    Study scientific subjects and
+                    build a foundation for research
+                    and higher education.
+                </p>
+
+                <div class="course-info">
+                    <span>⏱ 3 Years</span>
+                    <span>🎓 Graduation</span>
+                </div>
+
+                <button onclick="viewCourse('B.Sc')">
+                    View Details →
+                </button>
+
+            </div>
+
+        </div>
+
+        <p id="noResult" class="no-result">
+            No courses found.
+        </p>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="course-cta">
+
+        <h2>Not Sure Which Course to Choose?</h2>
+
+        <p>
+            Take our career quiz and discover courses
+            that match your interests and skills.
+        </p>
+
+        <button onclick="openQuiz()">
+            Take Career Quiz →
+        </button>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Skill<span>2</span>Career
+        </div>
+
+        <p>
+            Helping students choose the right career
+            and build the right skills.
+        </p>
+
+        <div class="footer-links">
+            <a href="home.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="home.html">Careers</a>
+            <a href="resources.html">Resources</a>
+            
+        </div>
+
+        <p class="copyright">
+            © 2026 Skill2Career. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="courses.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Skill2Career</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Skill<span>2</span>Career
+        </div>
+
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="resources.html">Resources</a>
+            <a href="dashboard.html" class="active">
+                Dashboard
+            </a>
+        </div>
+
+        <div class="nav-buttons">
+
+            <button class="logout-btn"
+                onclick="logout()">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <main class="dashboard">
+
+        <!-- Welcome -->
+
+        <section class="welcome">
+
+            <div>
+
+                <p class="small-title">
+                    YOUR DASHBOARD
+                </p>
+
+                <h1>
+                    Welcome, <span id="userName">Student</span> 👋
+                </h1>
+
+                <p>
+                    Manage your career journey from one place.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROFILE ================= -->
+
+        <section class="profile-section">
+
+            <div class="profile-card">
+
+                <div class="profile-top">
+
+                    <div class="profile-avatar"
+                        id="profileAvatar">
+                        S
+                    </div>
+
+                    <div>
+
+                        <h2 id="profileName">
+                            Student
+                        </h2>
+
+                        <p id="profileRole">
+                            Student
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-info">
+
+                    <div class="info-item">
+
+                        <span>
+                            Email
+                        </span>
+
+                        <strong id="profileEmail">
+                            Not available
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Account Type
+                        </span>
+
+                        <strong id="profileAccountType">
+                            Student
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK ACTIONS -->
+
+            <div class="quick-card">
+
+                <h2>Quick Actions</h2>
+
+                <button
+                    onclick="window.location.href='courses.html'">
+                    📚 Explore Courses
+                </button>
+
+                <button
+                    onclick="window.location.href='quiz.html'">
+                    🎯 Take Career Quiz
+                </button>
+
+                <button
+                    onclick="window.location.href='resources.html'">
+                    📖 Explore Resources
+                </button>
+
+                <button
+                    onclick="window.location.href='home.html'">
+                    💼 Explore Careers
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATS ================= -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    💼
+                </div>
+
+                <div>
+                    <h3 id="savedCount">0</h3>
+                    <p>Saved Careers</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🎯
+                </div>
+
+                <div>
+                    <h3>1</h3>
+                    <p>Career Quiz</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📚
+                </div>
+
+                <div>
+                    <h3>Explore</h3>
+                    <p>Courses</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SAVED CAREERS ================= -->
+
+        <section class="saved-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="small-title">
+                        YOUR INTERESTS
+                    </p>
+
+                    <h2>Saved Careers</h2>
+
+                </div>
+
+                <button
+                    onclick="window.location.href='home.html'">
+                    Explore Careers →
+                </button>
+
+            </div>
+
+
+            <div
+                id="savedCareers"
+                class="saved-careers">
+
+                <!-- JavaScript se cards aayenge -->
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Skill<span>2</span>Career
+        </div>
+
+        <p>
+            Helping students choose the right career
+            and build the right skills.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="home.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="resources.html">Resources</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Skill2Career. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
