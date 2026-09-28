@@ -312,11 +312,15 @@ nav a.active {
 
 .career-card {
     background: white;
-
     border: 1px solid #e9e5f2;
     border-radius: 16px;
-
     padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 420px;
+    height: 100%;
+    box-sizing: border-box;
 
     transition: 0.3s;
 
@@ -400,6 +404,7 @@ nav a.active {
     cursor: pointer;
 
     transition: 0.3s;
+    margin-top: auto;
 }
 
 .career-card button:hover {
