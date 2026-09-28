@@ -493,6 +493,9 @@ function loadCareer() {
     document.getElementById("careerDescription").innerText =
         career.shortDescription;
 
+    document.getElementById("careerOverview").innerText =
+        career.shortDescription;
+
     document.getElementById("education").innerText =
         career.education;
 
